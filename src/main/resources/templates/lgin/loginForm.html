@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"/>
+<head th:replace="~{fragment/head::head}"></head>
+<body>
+<form th:action="@{/login}" method="post">
+  <div class="container">
+    <div class="form-group">
+      <label>이메일</label>
+      <input type="text" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+      <label>비밀번호</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">로그인</button>
+  </div>
+</form>
+</body>
+</html>
